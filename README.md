@@ -18,3 +18,19 @@ select * from `classes` where `classes`.`deleted_at` is null order by `nom` asc
 public function index() {
     return view('frontend.menu2.alumni.index'); // fixed typo
 }
+# my-first-eneam-fix - ENEAM Bug Hunt
+
+Real bug found on eneam.uac.bj on Oct 2 2026.
+
+## Bug
+- 500 Error on /club/alumni-étudiant
+- View [frontend.menu2.almni.index] not found -> typo almni
+- File: AlumniController.php:11
+
+## What I learned
+- Laravel MVC
+- N+1 query problem
+- APP_DEBUG should be false in production
+
+By Winner-debug-ctrl - Future ENEAM IT student
+
