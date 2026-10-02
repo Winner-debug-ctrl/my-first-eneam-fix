@@ -41,6 +41,7 @@ select * from `classes` where `classes`.`deleted_at` is null order by `nom` asc
 public function index() {
     return view('frontend.menu2.alumni.index'); // fixed typo
 }
+
 # my-first-eneam-fix - ENEAM Bug Hunt
 
 Real bug found on eneam.uac.bj on Oct 2 2026.
